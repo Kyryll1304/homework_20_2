@@ -120,9 +120,18 @@ nav {
 .d_none {
   display: none;
 }
+.show {
+  display: block;
+}
 .confirm.show {
   display: block;
 }
 .confirm_overlay.show {
   display: block;
+}
+.order_form {
+  padding: 0 0 5% 5%;
+}
+.order_summary {
+  padding: 0 0 5% 5%;
 }
