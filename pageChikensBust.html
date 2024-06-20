@@ -43,11 +43,14 @@
           </ul>
         </li>
         <li><a href="./index.html">Главная</a></li>
+        <li><a href="#" class="js_orders">Мои заказы</a></li>
       </ul>
     </nav>
     <div class="products">
       <img src="./img/IMG_6067.jpg" alt="img" />
-      <h2>Куринная грудинка 120.90 грн/кг</h2>
+      <h2>Куринная грудинка</h2>
+      <p id="sum_price">120.90</p>
+      <h2>грн/кг</h2>
       <button class="js_btn">Купить</button>
     </div>
     <div class="order_form d_none">
@@ -85,6 +88,11 @@
     <div class="order_summary d_none">
       <h2>Информация про заказ</h2>
       <p id="orderInfo"></p>
+    </div>
+    <div class="orders_list d_none">
+      <h2>Мои заказы</h2>
+      <ul id="orders"></ul>
+      <button class="back_to_menu">Назад к меню</button>
     </div>
     <script src="./index.js"></script>
   </body>
