@@ -11,11 +11,16 @@ const ordersUlEl = document.getElementById("orders");
 const showOrdersBtn = document.querySelector(".js_orders");
 const backToMenuBtn = document.querySelector(".back_to_menu");
 
-const sum = document.getElementById("sum_price");
+const sumElements = document.getElementsByClassName("sum_price"); // Берем по классу
 
-let sumText = sum.textContent;
-
-let sumNumber = parseInt(sumText);
+// Валидация против НаН,как я уже говорил, обращаясь по классу мы получаем массив
+if (sumElements.length > 0) {
+  var sumText = sumElements[0].textContent; // Выбираем первый элемент
+  var sumNumber = parseFloat(sumText);
+  console.log(sumNumber);
+} else {
+  var sumNumber = 0; // Дефолт если ничего не выбрано
+}
 console.log(sumNumber);
 
 function showConfirm() {
